@@ -1,0 +1,25 @@
+</head>
+
+<body>
+
+<div id="container">
+
+<h1>Change Background Color</h1><br>
+
+<p>Click HERE </p> </div>
+
+<script>
+
+const container = document.getElementById('container');
+
+container.addEventListener('click', () => {
+
+const colors = ['#f00', '#0f0', '#00f', '#ff0', '#0ff', '#f0f'];
+
+const randomColor = colors[Math.floor(Math.random() * colors.length)];
+
+container.style.backgroundColor = randomColor; });
+
+</script>
+
+</body> </html>
